@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(12, 12, 12);
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 60px;
+}
+
+.navbar ul li{
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.listitem{
+    font-size: 20px;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 50px;
+    margin-top: 150px;
+}
